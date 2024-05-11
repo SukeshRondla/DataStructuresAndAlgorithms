@@ -1,5 +1,4 @@
 class Solution:
-    # Definition for a binary tree node.
      class TreeNode:
         def __init__(self, x):
             self.val = x
@@ -14,7 +13,7 @@ class Solution:
         # Recursively search left and right subtrees for the LCA
         left = self.lowestCommonAncestor(root.left, p, q)
         right = self.lowestCommonAncestor(root.right, p, q)
-        
+
         # If both left and right subtrees return non-None, it means p and q are found in different subtrees, s.  o root is the LCA
         if left and right:
             return root
