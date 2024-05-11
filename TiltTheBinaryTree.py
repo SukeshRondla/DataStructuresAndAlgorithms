@@ -19,7 +19,7 @@ class Solution:
                 helper(root.right)
                 return ans
                 
-        global ans
-        ans=0
-        helper(root)
-        return ans
+            global ans
+            ans=0
+            helper(root)
+            return ans
